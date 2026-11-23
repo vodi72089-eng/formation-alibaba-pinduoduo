@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voir la publicité — Formation Alibaba &amp; Pinduoduo</title>
+<style>
+  html,body{margin:0;background:#14110C;color:#fff;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh}
+  main{text-align:center;padding:20px}
+  video{width:min(360px,90vw);max-height:80vh;border:4px solid #FFC400;box-shadow:0 12px 30px rgba(0,0,0,.5);background:#000}
+  h1{font-family:Impact,Arial,sans-serif;font-size:24px;letter-spacing:.04em;margin:0 0 16px;color:#FFC400}
+  p{color:#cfc7bb;font-size:13px;margin-top:14px}
+  .btns{margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  button{background:#25D366;color:#06310F;border:3px solid #14110C;box-shadow:4px 4px 0 #000;border-radius:8px;padding:10px 16px;font-weight:900;cursor:pointer}
+  button.alt{background:#FFC400}
+</style>
+</head>
+<body>
+<main>
+  <h1>FORMATION ALIBABA &amp; PINDUODUO — 100% GRATUITE</h1>
+  <video id="v" controls autoplay loop playsinline src="video-publicite.mp4"></video>
+  <div class="btns">
+    <button id="play">▶ Lire</button>
+    <button id="pause" class="alt">⏸ Pause</button>
+  </div>
+  <p>18 s · 1080×1920 · version avec emoji Twemoji</p>
+</main>
+<script>
+  const v = document.getElementById('v');
+  document.getElementById('play').addEventListener('click', () => v.play());
+  document.getElementById('pause').addEventListener('click', () => v.pause());
+</script>
+</body>
+</html>
